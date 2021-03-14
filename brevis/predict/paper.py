@@ -12,5 +12,6 @@ def get_text(url):
 	article=Article(url, keep_article_html=True)
 	article.download()
 	article.parse()
-	text=article.article_html
-	return text
+	original=article.article_html
+	text = article.text
+	return original,text

@@ -22,8 +22,14 @@ docker pull vinayak1998th/bart_serve:1.0
 ```
 ### Step 3: Launch the container
 
+#### CPU Runtime
 ```bash
-docker run -d -p 8501:8501 -p 8500:8500 --name bart vinayak1998th/bart_serve:1.0
+docker run -d -p 8501:8501 -p 8500:8500 --name bart vinayak1998th/bart_serve:cpu
+```
+If you have an NVIDA CUDA supported GPU, you can run the server for GPU runtime
+#### GPU Runtime
+```bash
+docker run --runtime=nvidia -d -p 8501:8501 -p 8500:8500 --name bart vinayak1998th/bart_serve:gpu
 ```
 ### Step 4 : Test
 
