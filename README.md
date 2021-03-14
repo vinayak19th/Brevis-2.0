@@ -1,4 +1,7 @@
-# MDD_Project
+# BREVIS 2.0
+
+Updated and finished verions of news summarization website Brevis
+
 * **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension**: https://arxiv.org/abs/1910.13461
 
 # Usage
