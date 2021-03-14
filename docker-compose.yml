@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  tf:
+    image: vinayak1998th/bart_serve:cpu
+    container_name: tfserver
+    ports:
+      - '8500:8500'
+      - '8501:8501'
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: django-server
+    network_mode: "host"
+    volumes:
+      - ./brevis:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - tf
