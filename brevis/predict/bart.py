@@ -40,7 +40,7 @@ class SummaryModel:
                     else returns summary tokens
         """
         input_data = self.preprocess(text)
-        r = requests.post("http://localhost:8501/v1/models/bart:predict", data=input_data)
+        r = requests.post("http://tf:8501/v1/models/bart:predict", data=input_data)
         output_tokens = json.loads(r.text)['predictions']
         if(tokens_only):
             return output_tokens
