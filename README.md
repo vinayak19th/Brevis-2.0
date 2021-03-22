@@ -1,12 +1,26 @@
-# BREVIS 2.0
+# BREVIS-News 2.0
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/vinayak19th/vinayak19th.github.io?color=FFD43B&style=for-the-badge)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge&color=339933)](http://makeapullrequest.com)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?&style=for-the-badge&color=FFD43B)](https://lbesson.mit-license.org/)
-:
-Updated and finished verions of news summarization website Brevis
+
+Origina unfinished project [Brevis-News](https://github.com/niladridutt/Brevis-News)
 
 * **BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension**: https://arxiv.org/abs/1910.13461
+
+# Current Status:
+## Completed Features:
+- [x] Created custom serving model based on BART, pre-trained model from huggingface and fine-tuned on inshorts data
+- [x] Created Django backend for:
+  - [x] Article scraping 
+  - [x] Google-News API trending news feed
+- [x] Single line docker-compose deployment
+
+## Pending Work:
+- [ ] Designing front-end
+- [ ] Fine-Tune model on more dataset
+- [ ] Heroku Deployment
+- [ ] Trending news auto-summarization
 
 # Usage
 ## With docker-compose
@@ -46,3 +60,10 @@ docker run --runtime=nvidia -d -p 8501:8501 -p 8500:8500 --name bart vinayak1998
 #### Step 4 : Test
 
 The code for testing after the server is running is in the [Serving_Test](./Serving_Test.ipynb) notebook
+
+### Contributing to this Project
+Read Contributing.md file in the repository to learn more about making pull requests, and contributing in general.
+
+## Project Maintainers
+The project is currently being maintained by :  
+1) [Vinayak Sharma](https://github.com/vinayak19th) 
