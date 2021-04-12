@@ -14,9 +14,11 @@ Original unfinished project [Brevis-News](https://github.com/niladridutt/Brevis-
   - [x] Article scraping 
   - [x] Google-News API trending news feed
 - [x] Single line docker-compose deployment
+- [x] Designing front-end 
+
 
 ## Pending Work:
-- [ ] Designing front-end
+- [ ] Overhaul front-end 
 - [ ] Fine-Tune model on more dataset
 - [ ] Heroku Deployment
 - [ ] Trending news auto-summarization
