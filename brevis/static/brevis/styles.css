@@ -1,0 +1,95 @@
+.list {
+    background-color: #373F51;
+    color: #FBFCFF;
+}
+
+.list h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.Articles li {
+    background-color: #373F51;
+    color: #FFFFFF;
+}
+
+.Articles li.active {
+    background-color: #758BFD;
+    color: #FFFFFF;
+}
+
+.Articles li:hover {
+    background-color: #5aa897;
+    color: #FFFFFF;
+}
+
+.Articles a {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.Articles h1 {
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.wrapper {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #f8f5f1;
+}
+
+body {
+    background-color: #f8f5f1;
+}
+
+.details {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content {
+    background-color: #373F51;
+    color: #FBFCFF;
+    margin-top: 2rem;
+    padding: 1%;
+}
+
+.content h2 {
+    color: #FBFCFF;
+}
+
+.content hr {
+    border: 0.1rem dashed #ffffff;
+}
+
+.card-title {
+    color: #373F51;
+}
+
+.original {
+    margin-bottom: 5rem;
+}
+
+.blank {
+    padding-top: 5%;
+    padding-bottom: 100%;
+    text-align: center;
+    align-content: center;
+    background-color: #cfcfcf;
+}
+
+.badge-primary {
+    background-color: #758BFD;
+    border-color: #758BFD;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
