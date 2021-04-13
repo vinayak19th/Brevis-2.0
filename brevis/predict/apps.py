@@ -1,10 +1,6 @@
-from json import decoder
 from django.apps import AppConfig
+from .paper import get_articles
 
 class PredictConfig(AppConfig):
-    """Class to get predictions from text off the TF Serving server
-    """
+    default_auto_field = 'django.db.models.BigAutoField'
     name = 'predict'
-
-class NewsConfig(AppConfig):
-    name = 'newspaper'
