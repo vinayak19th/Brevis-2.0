@@ -71,5 +71,5 @@ class SummaryModel:
             Returns:
                 [list]: list containing the string summary
             """
-            result = [SummaryModel.tokenizer.decode(g, skip_special_tokens=False, clean_up_tokenization_spaces=False) for g in tokens]
+            result = [SummaryModel.tokenizer.decode(g, skip_special_tokens=False, clean_up_tokenization_spaces=True) for g in tokens]
             return result

@@ -9,4 +9,4 @@ urlpatterns = [
 ]
 
 from .startup import run_startup
-run_startup()     
+# run_startup()     

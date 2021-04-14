@@ -23,11 +23,14 @@ class Article(models.Model):
         if not self.body_summarized:
             print(f"Summarizing {self.title}")
             self.body_summarized = summarizer(self.body)
-        self.summary_len = len(self.body_summarized)
+        if len(self.body_summarized) >1 :
+            self.summary_len = len(self.body_summarized.split(" "))
+        else:
+            self.summary_len = len(self.body_summarized[0].split(" "))
         self.save()
 
     def save(self, *args, **kwargs): # new
-        self.text_len = len(self.body)
+        self.text_len = len(self.body.split(" "))
         if not self.slug:
             self.slug = slugify(self.title)
             print(self.slug)
