@@ -44,7 +44,7 @@ nest-asyncio==1.5.1
 newspaper3k==0.2.8
 newsapi-python==0.2.6
 ninja==1.9.0.post1
-nltk==3.5
+nltk==3.6.6
 notebook==6.2.0
 numpy==1.20.1
 packaging==20.9
