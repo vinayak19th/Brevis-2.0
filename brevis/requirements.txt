@@ -46,7 +46,7 @@ newsapi-python==0.2.6
 ninja==1.9.0.post1
 nltk==3.5
 notebook==6.2.0
-numpy==1.20.1
+numpy==1.22.0
 packaging==20.9
 pandocfilters==1.4.3
 parso==0.8.1
