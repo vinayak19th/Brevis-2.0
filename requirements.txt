@@ -9,7 +9,7 @@ filelock==3.0.12
 idna==2.10
 jedi==0.17.0
 jieba3k==0.35.1
-joblib==1.0.1
+joblib==1.2.0
 jupyter==1.0.0
 MarkupSafe==1.1.1
 meson==0.54.0
